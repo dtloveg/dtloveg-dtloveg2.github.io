@@ -1,0 +1,211 @@
+@font-face { 
+    font-family: "TTLakes"; 
+    src: url(./fonts/TTLakes-Regular.woff2); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-display: swap; 
+} 
+ 
+@font-face { 
+    font-family: "TTLakes"; 
+    src: url(./fonts/TTLakes-Medium.woff2); 
+    font-weight: 500; 
+    font-style: normal; 
+    font-display: swap; 
+} 
+ 
+@font-face { 
+    font-family: "TTLakes"; 
+    src: url(./fonts/TTLakes-Bold.woff2); 
+    font-weight: 700; 
+    font-style: normal; 
+    font-display: swap; 
+} 
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+  }
+
+  body {
+    
+    font-family: "TTLakes"; 
+    font-weight: 500; 
+    font-size: 16px;
+    
+}
+  .mobile-navigation {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    box-shadow: 
+        16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+        -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    padding-left: 24px;
+    row-gap: 46px;
+    overflow-y: auto;
+}
+.action-button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: none;  
+    transition-duration: 1s, 1s;
+    transition-property: filter, transform;
+
+}
+.mobile-navigation__header {
+    margin-top: 23px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    
+}
+.mobile-navigation__header-button--burger {
+    background-color: #FF3E79;
+    background-image: url("img/icon_x.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+}
+
+.mobile-navigation__header-button--search {
+    background-color: #FF3E79;
+    background-image: url("img/icon_loop.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right: 24px;
+}
+.mobile-navigation__menu {
+    display: flex;
+    margin-bottom: auto ;
+    
+}
+.mobile-navigation__list {
+    
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+      
+   
+}
+.mobile-navigation__link {
+    color: inherit;
+    text-decoration: none;
+    min-height: 32px;
+    
+    
+}
+.mobile-navigation_footer {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.mobile-navigation__buttons {
+    display: flex;
+    width: 196px;
+    
+    gap: 16px;
+   
+
+}
+.mobile-navigation__button--call {
+    background-color: #FF3E79;
+    background-image: url("img/call.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+}
+
+.mobile-navigation__button--chat {
+    background-color: #FF3E79;
+    background-image: url("img/chat.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+   
+}
+
+.mobile-navigation__button--profile {
+    background-color: #FF3E79;
+    background-image: url("img/profile.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+}
+.mobile-navigation__contacts {
+    display: block;
+    margin-top: 16px;
+    
+    
+}
+.mobile-navigation__contacts--email, .mobile-navigation__contacts--number {
+    font-style:  normal;
+    padding: 8px 0;
+}
+.mobile-navigation__contacts--number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B1C21;
+}
+
+.mobile-navigation__languages {
+   display: flex;
+   list-style-type: none;
+   margin-top: 40px;
+    
+}
+.mobile-navigation__language {
+    padding: 0 7px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-navigation__language:first-child {
+    padding-left: 0;
+}
+
+.mobile-navigation__link--active {
+    position: relative;
+    color: #7E7E82;
+    
+}
+
+.mobile-navigation__link--active::before {
+  
+    content: "";
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    position: absolute;
+    border-radius: 0 50px 50px 0;
+    left: -24px;
+    top: -4px;
+
+}
+
+.action-button:hover {
+	filter: saturate(190%);
+    transform: scale(1.2);
+
+}
+
+.mobile-navigation__link:hover {
+    font-size: 18px;
+    color: black;
+}
