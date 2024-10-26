@@ -22,8 +22,6 @@
     font-display: swap; 
 } 
 
-
-
 * {
     padding: 0px;
     margin: 0px;
@@ -31,12 +29,10 @@
   }
 
   body {
-    
     font-family: "TTLakes"; 
     font-weight: 500; 
     font-size: 16px;
-    
-}
+    }
   .mobile-navigation {
     position: fixed;
     display: flex;
@@ -92,44 +88,37 @@
     
 }
 .mobile-navigation__list {
-    
-
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-      
-   
-}
+    gap: 24px; 
+   }
 .mobile-navigation__link {
     color: inherit;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    font-size: 16px;
     min-height: 32px;
-    
-    
+    transition: transform 0.3s ease;      
 }
 .mobile-navigation_footer {
     display: flex;
     flex-direction: column;
-    
-    
+     
 }
 .mobile-navigation__buttons {
     display: flex;
     width: 196px;
-    
     gap: 16px;
-   
-
-}
+   }
 .mobile-navigation__button--call {
     background-color: #FF3E79;
     background-image: url("img/call.svg");
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    
-}
+    }
 
 .mobile-navigation__button--chat {
     background-color: #FF3E79;
@@ -137,8 +126,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
-   
-}
+   }
 
 .mobile-navigation__button--profile {
     background-color: #FF3E79;
@@ -146,13 +134,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    
+  
 }
 .mobile-navigation__contacts {
     display: block;
-    margin-top: 16px;
-    
-    
+    margin-top: 16px;       
 }
 .mobile-navigation__contacts--email, .mobile-navigation__contacts--number {
     font-style:  normal;
@@ -186,26 +172,26 @@
     
 }
 
-.mobile-navigation__link--active::before {
-  
+.mobile-navigation__link--active::before {  
     content: "";
     width: 4px;
     height: 32px;
     background-color: #41F6D7;
     position: absolute;
     border-radius: 0 50px 50px 0;
-    left: -24px;
-    top: -4px;
-
+    left: -24px;  
 }
 
 .action-button:hover {
-	filter: saturate(190%);
+    filter: saturate(190%);
     transform: scale(1.2);
-
 }
 
-.mobile-navigation__link:hover {
-    font-size: 18px;
+.mobile-navigation__link:hover:not(.mobile-navigation__link--active) {
+    transform: scale(1.05);
     color: black;
+}
+
+.mobile-navigation__language--active {
+    color: #7E7E82;
 }
